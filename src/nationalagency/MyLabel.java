@@ -4,14 +4,16 @@
  * and open the template in the editor.
  */
 package nationalagency;
-import javax.swing.JFrame;
+import javax.swing.JLabel;
 /**
  *
  * @author martin.atanasov
  */
-public class Frame {
-    Frame(){
-       JFrame frame = new JFrame();
-       frame.setTitle("National Agency");
+public class MyLabel extends JLabel{
+    MyLabel(){
+        this.setText(" ");
+        this.setHorizontalTextPosition(JLabel.CENTER);
+        
     }
+    
 }

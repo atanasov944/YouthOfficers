@@ -40,18 +40,13 @@ public class NationalAgency {
         itSector.setNumberOfEmployees(2);
         itSector.setNameOfContact("Emir Emirovic");
         
-        
-        JFrame frame = new JFrame();
         String name = JOptionPane.showInputDialog("Enter your name ");
         JOptionPane.showMessageDialog(null, "Hello " + name);
         
-        String nameSector = JOptionPane.showInputDialog("Are you interested in knowing basic info about our sectors?  \nFor Youth enter 1, \nfor HE enter 2, \nfor IT enter 3, \n if you wish to proceed enter 4");
+        String nameSector = JOptionPane.showInputDialog("Are you interested in knowing basic info about our sectors?  "
+                + "\nFor Youth enter 1, \nfor HE enter 2, \nfor IT enter 3, \n if you wish to proceed enter 4");
         
-        
-        
-            
-        
-        
+         
         switch (nameSector){
             case "1":
                 JOptionPane.showMessageDialog(null, mySector.getHeadOfDept() + " is the head of Departmant and has " + mySector.getNumberOfEmployees() + " employees");
